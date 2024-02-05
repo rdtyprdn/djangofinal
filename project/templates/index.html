@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skenvo Te - LogIn Form</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <!-- background -->
+    {% load static %}
+    <img src="{% static 'img/bg-vote.jpg' %}" class="bg">
+    <!-- login form -->
+    <div class="login-form">
+        <!-- form -->
+        <div class="container">
+            <div class="judul">
+                {% load static %}
+                <img src="{% static 'img/skenvote.jpg' %}" alt="">
+            </div>
+            <form action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="Username">Username</label>
+                    <input type="text" id="Username" name="Username" placeholder="Masukkan Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="password" id="Password" name="Password" placeholder="Masukkan Password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Masuk</button>
+                </div>
+            </form>
+            <div class="akun">
+                <h1>Belum memiliki akun?</h1>
+                <a href="{% url 'signup' %}">Buat akun baru</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

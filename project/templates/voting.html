@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'style2.css' %}" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>voting page</title>
+  </head>
+  <body>
+    <div class="homepage">
+      <nav class="top">
+        <div class="logo">
+          <a href="index.html"><img src="{% static 'image/IMG_3732.JPG' %}" alt="" /></a>
+        </div>
+        <div class="menu">
+          <ul class="menu1">
+            <li><a href="###">About</a></li>
+          </ul>
+          <ul class="menu2">
+            <li><a href="###">Login</a></li>
+            <li>
+              <a href="###"><span>Sign Up</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-voting">
+        <div class="konten">
+          <h2 class="Judul" id="judul">PEMILU PUTARAN KEDUA</h2>
+          oleh <span>KPU REPUBLIK INDONESIA</span>
+          <p>Buat pilihan:</p>
+          <div class="border-foto">
+            <div class="fotoKandidat1" id="kandidat1">
+              <img
+                src="{% static 'img/ganjra.jpg' %}"
+                alt=""
+                id="foto1"
+                width=""
+                height="180px"
+              />
+              <div class="input1">
+                <input type="radio" name="customRadio" id="myRadio1" />
+                <h3>Ganjar Pranowo</h3>
+              </div>
+            </div>
+            <div class="fotoKandidat2" id="kandidat2">
+              <img
+                src="{% static 'img/prabs.png' %}"
+                alt=""
+                id="foto2"
+                width=""
+                height="180px"
+              />
+              <div class="input2">
+                <input type="radio" name="customRadio" id="myRadio2" />
+                <h3>Prabowo Subianto</h3>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <div class="vote">
+              <a href="index.html"
+                ><button>
+                  VOTE
+                  <span><i class="bx bxs-right-arrow-alt"></i></span></button
+              ></a>
+            </div>
+            <div class="result">
+              <a href=""
+                ><button>
+                  <span><i class="bx bxs-bar-chart-alt-2"></i></span>Lihat hasil
+                </button></a
+              >
+            </div>
+            <div class="share">
+              <a href=""
+                ><button>
+                  <span><i class="bx bxs-share-alt"></i></span>Share
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lock">
+        <i class="bx bxs-lock-alt"></i>One vote per IP-Address allowed.
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-konten">
+        <div class="logo-skenvote">
+          <a href="index.html"><img src="{% static 'image/IMG_3732.JPG' %}" alt="" /></a>
+        </div>
+        <div class="title-end">
+          <h3>
+            Memudahkan pembuatan pendapat dan survei dengan instan dan real-time
+            secara gratis.
+          </h3>
+          <div class="icons">
+            <a href="#"><i class="bx bxl-github"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-whatsapp"></i></a>
+            <a href="#"><i class="bx bxl-discord-alt"></i></a>
+          </div>
+        </div>
+        <a href="#">About</a>
+      </div>
+      <p>&copy; 2024 SKENVOTE. All Rights Reserved.</p>
+    </div>
+
+    <script src="{% static 'script.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>homepage</title>
+</head>
+<body>
+    <div class="homepage">
+        <nav class="top">
+            <div class="logo">
+                <a href="{% url 'home' %}"><img src="{% static 'img/IMG_3732.JPG' %}" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul class="menu1">
+                    <!--NANTI WAHYU KIRIM ABOUT-->
+                    <li><a href="###">About</a></li>
+                    
+                </ul>
+                <ul class="menu2">
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'signup' %}"><span>Sign Up</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-home">
+            <div class="konten-home">
+                <div class="image_voting">
+                    <img src="{% static 'img/voting2.png' %}" alt="">
+                </div>
+                <h2 class="h1">Demokrasi</h2>
+                <h2 class="h2">adalah kunci</h2>
+                <p>Ingin melakukan pemilihan tetapi takut dengan transparansi? skenvote adalah solusi yang tepat untukmu
+                    kami menyediakan website voting yang tidak akan bisa diintervensi oleh siapapun
+                </p>
+                
+            </div>
+        </div>
+        <div class="started">
+            <div class="text-started">
+                <h3 class="h1">Ready to get started?</h3>
+                <h3 class="h2">It's free</h3>
+            </div>
+            <div class="btn-home">
+                <a href="#" id="btn-create-poll"><button class="btn-create-poll">Create a poll</button></a>
+                <a href="#" id="btn-signup"><button class="btn-signup">Sign Up</button></a>
+            </div>
+        </div>
+
+    <div class="footer">
+        <div class="footer-konten">
+            <div class="logo-skenvote">
+                <a href="{% url 'home' %}"><img src="{% static 'image/IMG_3732.JPG' %}" alt=""></a>
+            </div>
+            <div class="title-end">
+                <h3>Memudahkan pembuatan pendapat dan survei dengan instan dan real-time secara gratis.</h3>
+            <div class="icons">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="#"><i class='bx bxl-discord-alt' ></i></a>
+                
+            </div>
+            </div>
+            <!--NANTI WAHYU BIKIN ABOUT-->
+            <a href="###">About</a>
+            
+        </div>
+        <p>&copy 2024 SKENVOTE. All Rights Reserved.</p>
+    </div>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
